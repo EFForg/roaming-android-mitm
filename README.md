@@ -1,4 +1,4 @@
-# Intercepting Android Traffic On-Device with frida and mitmproxy
+# Mobile MitM: Intercepting your Android App Traffic On the Go
 
 _Note: This post provides technical guidance only. Testing described in this post is done at the reader's own risk and should only be conducted on devices and networks that you have permission to test on._
 
