@@ -1,6 +1,6 @@
 # Intercepting Android Traffic On-Device with frida and mitmproxy
 
-Note: This post provides technical guidance only. Testing described in this post is done at the reader's own risk and should only be conducted on devices and networks that you have permission to test on.
+_Note: This post provides technical guidance only. Testing described in this post is done at the reader's own risk and should only be conducted on devices and networks that you have permission to test on._
 
 ## Introduction
 
@@ -8,7 +8,7 @@ In order to audit the privacy and security practices of the apps we use on a dai
 
 But what if we don't have the luxury of a testing lab?  What if the app behavior changes based on your location, or interaction with the outside world?  For instance, if you use an app to rent a car or unlock a door to a shared workplace, the real-time behavior of the app will be different from what you can replicate in a lab.  For these kinds of complex interactions, a roaming Machine-in-the-Middle (MitM) schema is needed.  In fact, all three components of the previous schema (test device, interceptor, and control device) will need to be consolidated into a single device running the software required for all three components.  If the app being audited is a form of [disciplinary technology](https://www.eff.org/deeplinks/2021/05/fighting-disciplinary-technologies) – that is, a surveillance app that one person installs on the device of another person – then the auditor will also need to surreptitiously capture traffic being sent by the app, which may pose additional testing complications.
 
-This post, will detail the steps involved to configure an Android device to audit the traffic of any app installed on it, requiring no other device to be physically present.  The device will have to be [rooted](https://www.xda-developers.com/root/) in order to install the software required for this setup.  All of the software required in this post is free of cost and open-source, not requiring an extra penny of investment above and beyond that of the device itself.  The end result will allow the user to open an app in a specialized way that allows the traffic to be logged, without attaching extraneous devices or requiring the device to be connected to any specific network or access point.
+This post will detail the steps involved to configure an Android device to audit the traffic of any app installed on it, requiring no other device to be physically present.  The device will have to be [rooted](https://www.xda-developers.com/root/) in order to install the software required for this setup.  All of the software required in this post is free of cost and open-source, not requiring an extra penny of investment above and beyond that of the device itself.  The end result will allow the user to open an app in a specialized way that allows the traffic to be logged, without attaching extraneous devices or requiring the device to be connected to any specific network or access point.
 
 ## Requirements
 
