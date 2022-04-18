@@ -226,7 +226,7 @@ Now switch to the `mitmproxy` `tmux` session and observe traffic rolling on thro
 
 ![frida screenshot](Screenshots/frida_screenshot.png)
 
-Now that we've confirmed everything works together seamlessly, we won't have to run the `frida` command manually.  Just have the auditor set up the `iptables` rules and `mitmproxy` to run after boot (or [automate](https://www.github.com/efforg/roaming-android-mitm/blob/master/iptables-mitmproxy-init-script.sh) this with the `init` system in the Linux container). Then, the user can open the app when they want it audited.
+Now that we've confirmed everything works together seamlessly, we won't have to run the `frida` command manually.  Just have the auditor set up the `iptables` rules and `mitmproxy` to run after boot (or [automate](https://www.github.com/efforg/roaming-android-mitm/blob/main/iptables-mitmproxy-init-script.sh) this with the `init` system in the Linux container). Then, the user can open the app when they want it audited.
 
 ## Conclusion
 
